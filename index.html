@@ -2,70 +2,155 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="container text-center mt-5">
-        <img src="imagens/perfil-nic.png" alt="Avatar da Nicole" class="rounded-circle" width="150" height="190">
-        <p class="lead">Eu sou a Nicole</p>
-        <h1>Sou estudante do Ensino Médio na escola PEI Sylvia Ramos Esquivel</h1>
-        <p>Tenho uma grande paixão pela dança, sendo formada em ballet clássico e atualmente me aperfeiçoando em jazz e
-            contemporâneo.</p>
-        <p>Sou uma pessoa bastante dedicada e gosto de me esforçar ao máximo em tudo o que faço. Adoro aprender coisas
-            novas e estou sempre buscando me desafiar e melhorar, seja nos estudos ou na minha arte.</p>
-        <p>Minhas habilidades:</p>
-        <div class="mb-4">
-            <span class="badge bg-secondary">Proatividade</span>
-            <span class="badge bg-secondary">Comprometimento</span>
-            <span class="badge bg-secondary">Criatividade</span>
+  <header class="container text-center mt-5">
+    <img src="imagens/perfil-nic.png" alt="Avatar da Nicole" class="rounded-circle" width="140" height="200" />
+    <p class="lead">Eu sou a Nicole</p>
+    <h1>Sou estudante do Ensino Médio na escola PEI Sylvia Ramos Esquivel</h1>
+    <p>
+      Tenho uma grande paixão pela dança, sendo formada em ballet clássico e
+      atualmente me aperfeiçoando em jazz e contemporâneo.
+    </p>
+    <p>
+      Sou uma pessoa bastante dedicada e gosto de me esforçar ao máximo em
+      tudo o que faço. Adoro aprender coisas novas e estou sempre buscando me
+      desafiar e melhorar, seja nos estudos ou na minha arte.
+    </p>
+    <p>Minhas habilidades:</p>
+    <div class="mb-4">
+      <span class="badge bg-secondary">Proatividade</span>
+      <span class="badge bg-secondary">Comprometimento</span>
+      <span class="badge bg-secondary">Criatividade</span>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <h2 class="mb-4">Meus projetos no P5.js</h2>
+    <div class="row">
+      <!-- Projeto 1 - Monalisa -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagens/foto1.png" class="card-img-top" alt="Imagem do projeto de Monalisa" />
+          <div class="card-body">
+            <h5 class="card-title">Projeto Monalisa</h5>
+            <p class="card-text">
+              Criamos uma arte interativa onde os olhos de uma figura seguem o movimento do mouse, simulando o famoso efeito da Monalisa.
+            </p>
+            <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <main class="container mt-5">
-        <h2 class="mb-4">Meus projetos no P5.js</h2>
-        <div class="row">
-            <!-- Projeto 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="imagens/foto1.png" class="card-img-top" alt="Imagem do projeto de Monalisa">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto Monalisa</h5>
-                        <p class="card-text">No Projeto Monalisa, usamos p5.js para criar uma arte interativa onde os olhos de uma figura seguem o movimento do mouse, simulando o famoso efeito da Monalisa.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
-                </div>
-            </div>
-
-                <!-- Projeto 2 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="imagens/foto2.png" class="card-img-top" alt="Imagem do projeto de Corrida">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto Jogo de Corrida</h5>
-                        <p class="card-text">Desenvolvemos um jogo com quatro jogadores que usam teclas do teclado para correr até a linha de chegada.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projeto 3 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="imagens/foto3.png" class="card-img-top" alt="Imagem do projeto Quente e Frio">
-                    <div class="card-body">
-                        <h5 class="card-title">Projeto Quente e Frio</h5>
-                        <p class="card-text">Criamos um jogo onde o objetivo é encontrar um ponto oculto usando a distância entre o mouse e o ponto, com dicas visuais de aproximação.</p>
-                        <button type="button" class="btn btn-link">Veja o projeto</button>
-                    </div>
-                </div>
-            </div>
+      <!-- Projeto 2 - Quente e Frio -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagens/foto2.png" class="card-img-top" alt="Imagem do projeto de Corrida" />
+          <div class="card-body">
+            <h5 class="card-title">Quente e Frio</h5>
+            <p class="card-text">
+              Criamos um jogo onde o objetivo é encontrar um ponto oculto usando dicas visuais baseadas na distância entre o mouse e o ponto escondido.
+            </p>
+            <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+          </div>
         </div>
-    </main>
+      </div>
+
+      <!-- Projeto 3 - Jogo de Corrida -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="imagens/foto3.png" class="card-img-top" alt="Imagem do projeto Quente e Frio" />
+          <div class="card-body">
+            <h5 class="card-title">Jogo de Corrida</h5>
+            <p class="card-text">
+              Desenvolvemos um jogo com quatro jogadores que usam teclas do teclado para correr até a linha de chegada.
+            </p>
+            <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja o projeto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal 1 - Monalisa -->
+  <div class="modal" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Projeto Monalisa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>No Projeto Monalisa, utilizamos a biblioteca p5.js para criar uma arte interativa inspirada na famosa pintura de Leonardo da Vinci. O objetivo principal foi simular o efeito visual do olhar da Monalisa, que dá a impressão de estar sempre nos observando.</p>
+          <p>Desenhamos a personagem com formas geométricas básicas e programamos as pupilas para que seguissem a posição do mouse. Isso criou o efeito visual do olhar que acompanha o usuário.</p>
+          <p>Aprendemos sobre formas, coordenadas, variáveis e lógica de movimentação em p5.js.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001096605430sp/sketches/kSKWbbFSH" class="btn btn-link" target="_blank">Projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 - Quente e Frio -->
+  <div class="modal" id="modal2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Projeto Quente e Frio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>No Projeto Quente e Frio, utilizamos a biblioteca p5.js para criar um jogo interativo em que o objetivo é encontrar um ponto escondido na tela. Esse ponto é gerado de forma aleatória pelo próprio código, sem que o jogador saiba onde ele está. Para ajudar nessa missão, programamos um sistema que calcula a distância entre o mouse e o ponto oculto usando o teorema de Pitágoras.</p>
+          <p>Quanto mais longe o cursor estiver do ponto escondido, maior será um círculo exibido na tela, indicando que o jogador está “frio”. À medida que o mouse se aproxima do ponto, o círculo diminui de tamanho, mostrando que o jogador está “esquentando”. Essa lógica transforma a experiência em um jogo divertido e ao mesmo tempo educativo, reforçando o uso de matemática e programação para resolver problemas visuais.</p>
+          <p>Durante o desenvolvimento, aprendemos a trabalhar com números aleatórios, coordenadas no plano cartesiano, lógica condicional e interação com o mouse, sempre com foco em tornar a experiência intuitiva e envolvente.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001096605430sp/sketches/g3JoEM_n8" class="btn btn-link" target="_blank">Projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 - Corrida -->
+  <div class="modal" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Jogo de Corrida</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>No Projeto Jogo de Corrida, criamos um jogo simples e divertido usando p5.js, em que quatro personagens competem em uma corrida. Cada jogador controla um personagem através de uma tecla específica do teclado. Ao pressionar repetidamente sua tecla, o personagem se movimenta da esquerda para a direita. Vence aquele que clicar mais rápido e cruzar primeiro a linha de chegada.</p>
+          <p>Além da movimentação dos personagens, programamos a linha de chegada para que tivesse uma aparência mais realista, como nas corridas de automóveis, utilizando um padrão quadriculado em preto e branco. Também criamos uma lógica para identificar automaticamente quem venceu a corrida com base na posição dos personagens.</p>
+        <p>Com esse projeto, colocamos em prática conceitos importantes da programação, como controle por teclado, atualização de posições na tela, uso de condicionais para verificar o vencedor e elementos visuais personalizados. Foi uma ótima forma de aplicar lógica de forma criativa e dinâmica, enquanto desenvolvemos um jogo divertido e competitivo.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://editor.p5js.org/00001096605430sp/sketches/Hd8cCeEbT" class="btn btn-link" target="_blank">Projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="container py-5">
+    <h5>Entre em contato</h5>
+    <div>
+      <i class="bi bi-envelope-at"></i>
+      <p>Email: 00001096605430sp@al.educacao.sp.gov.br</p>
+    </div>
+    <p class="my-5 text-center">© Copyright 2025. Produzido por Nicole Cristina da Silva</p>
+  </footer>
+
+  <!-- Script do Bootstrap para os modais -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

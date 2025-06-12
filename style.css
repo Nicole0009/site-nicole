@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap");
+
+:root {
+    --cor-principal: #6c7bc7;
+    --cor-secundaria: #b9a369;
+    --cor-destaque: #c39064;
+}
+
+body {
+    font-family: 'Edu SA Hand', sans-serif;
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+.btn-link {
+    color: var(--cor-principal);
+    font-weight: 700;
+}
